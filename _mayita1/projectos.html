@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mayita > projectos</title>
+    <link rel="stylesheet" href="_estilo/principal.css">
+    <link rel="stylesheet" media="screen and (max-device-width: 799px)" href="_estilo/telefone.css">
+</head>
+<body>
+    <main class="interface">
+        <header>
+            <img src="_imagens/icon-menu.png" id="menu" alt="menu" onclick="menu()">
+            <nav class="menu">
+                <li id="home">Home</li>
+                <li id="projectos">Projectos</li>
+                <li id="info">informações</li>
+            </nav>
+        </header>
+        <section class="produto">
+            <article id="lixo">
+                <h1>Produtos Eliminados</h1>
+            </article>
+            <article id="novo">
+                <h1>Criar Novo produto</h1>
+                <input id="nome" type="text" placeholder="Nome do produto">
+                <input id="qtt" type="number" placeholder="Quantidade do produto">
+                <button id="add">Adicionar</button>
+            </article>
+            <article id="guardado">
+                <h1>Produtos Guardados</h1>
+            </article>
+        </section>  
+
+        <footer>
+            <figcaption>
+                <h1>Mayita</h1>
+                <p>Siga as nossas páginas nas redes sociais<br>Também podes deixar-nos uma mensagem de e-mail</p>
+            </figcaption>
+
+            <fieldset  id="som"><legend>Tocar Fundo</legend>
+                <audio src="oceans.m4a"></audio>
+                <img src="_imagens/som-off.png" alt="som"><span>Off</span>
+            </fieldset>
+            <fieldset><legend>Contacta-me</legend>
+                <a href="edilson.twenty7eduardo@gmail.com">Email</a><br>
+                <a href="https://facebook.com/edilsonvita">Facebook</a> |
+                <a href="https://istagram.com/edilsonvita">Isntagram</a>
+            </fieldset>
+        </footer>
+    </main>
+    <script src="_script/principal.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mayita</title>
+    <link rel="stylesheet" href="_estilo/principal.css">
+    <link rel="stylesheet" media="screen and (max-device-width: 799px)" href="_estilo/telefone.css">
+</head>
+<body>
+    <main class="interface">
+        <header>
+            <img src="_imagens/icon-menu.png" id="menu" alt="menu">
+            <nav class="menu" onclick="menu()">
+                <li id="home">Home</li>
+                <li id="projectos">Projectos</li>
+                <li id="info">informações</li>
+            </nav>
+        </header>
+        <img src="_imagens/destaque.jpg" alt="destaque" class="destaque">
+        <section class="artigos">
+            <article id="noticia01">
+                <img src="_imagens/icon-informacao.png" alt="icon-informacao">
+                <h1>O que é</h1>
+                <p>Mayita é a sua nova assistente de negócios, ela gere os dados do seu negócio e de uma forma automática podes controlar todos os dados do seu produto</p>
+            </article>
+            <article id="noticia02">
+                <img src="_imagens/icon-configuracao.png" alt="configuracao">
+                <h1>Como funciona</h1>
+                <p>Para começar, basta que tu cries um novo produto atravéz do menu acima ↑ seleccionando a opção "Novo" e preencher os campos com as informações requeridas</p>
+            </article>
+            <article id="noticia03">
+                <img src="_imagens/icon-maca.png" alt="icon-maca">
+                <h1>Começa agora</h1>
+                <p>Adicione tarefas, marque vendas e verifique o desempenho do seu negócio aqui você tem o registro geral das suas actividades marcadas.</p>
+            </article>
+        </section>
+        <footer>
+            <figcaption>
+                <h1>Mayita</h1>
+                <p>Siga as nossas páginas nas redes sociais<br>Também podes deixar-nos uma mensagem de e-mail</p>
+            </figcaption>
+
+            <fieldset  id="som"><legend>Tocar Fundo</legend>
+                <audio src="oceans.m4a"></audio>
+                <img src="_imagens/som-off.png" alt="som"><span>Off</span>
+            </fieldset>
+            <fieldset><legend>Contacta-me</legend>
+                <a href="edilson.twenty7eduardo@gmail.com">Email</a><br>
+                <a href="https://facebook.com/edilsonvita">Facebook</a> |
+                <a href="https://istagram.com/edilsonvita">Isntagram</a>
+            </fieldset>
+        </footer>
+    </main>
+    <script src="_script/principal.js"></script>
+</body>
+</html>

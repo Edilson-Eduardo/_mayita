@@ -1,0 +1,63 @@
+@charset "utf-8";
+@font-face {font-family: 'fonte-titulo';src: url('../Acto-UltraBlack.otf');}
+*{margin: 0px;padding: 0px;box-sizing: border-box;}
+body{width: 100vw;height: 100vh;background-color: #fff;}
+main.interface{width: 100%;height: 100%;position: relative;}
+header{width: 100%;background-color: #dedede;padding: 15px;position: fixed;display: flex;justify-content: center;}
+nav{list-style: none;padding: 5px;display: block;}
+nav li{display: inline-block;font-size: 15pt;font-weight: bold;margin: 10px;color: #0ca3c9;font-family: 'fonte-titulo';transition: all 500ms ease-in-out;padding: 5px;border-radius: 5px;}
+nav li:hover {transform: scale(1.1);cursor: pointer;background-color: #706d6d54;padding: 5px;border-radius: 5px;color: #fff;}
+header img#menu {width: 35px;height: 35px;display: none;}
+
+/*Formatando o corpo*/
+img.destaque{width: 100%;height: 500px;padding-top: 50px;}
+section.artigos{width:100%;padding: 50px;display: flex;justify-content: center;flex-direction: row;justify-items:center;background-color: #fff;}
+article{width: 40%;text-align: center;padding: 10px;}
+article img{width: 20%;margin-bottom: 10px;}
+article h1{font-family: 'fonte-titulo';color:#0ca3c9;}
+article p{font-size: 12pt;color: #888888;}
+
+/*Artigo 01*/article#noticia01{border-right: 4px solid #0ca3c9;}
+/*Artigo 03*/article#noticia03{border-left: 4px solid #0ca3c9;}
+
+/*Formatando o rodapé*/
+footer{background-color: #1bafd4;padding: 10px;display: flex;justify-content: center;align-content: center;flex-wrap: wrap;}
+figcaption{text-align:center;align-self: center;justify-self: center;width: 100%;}
+figcaption h1{font-size: 15pt;color:#fff;font-family: 'fonte-titulo';}
+figcaption p{font-size: 12pt;color: #fff;}
+footer fieldset{margin:10px;width: 35%;border-radius: 10px;text-align: center;padding: 10px;background-color: #dedede;border: none;box-shadow: 1px 0px 5px #000000a9;}
+footer legend{font-weight: bolder;font-size: 15pt;color: #888888;font-family: 'fonte-titulo';}
+a{color:#606060;text-decoration: none;font-size: 12pt;text-shadow: 1px 1px 2px #fff;}
+a:hover{color: #fff;}
+
+/*Formatando o fieldset som*/
+fieldset#som {display: flex;flex-direction: column;align-content: center;align-items: center;}
+fieldset#som img{width: 20%;cursor: pointer;}
+fieldset#som span{font-size: 12pt;font-family: 'fonte-titulo';margin-top: 5px;color: #0ca3c9;}
+
+/*Formatação da página projectos ==> section.produtos*/
+section.produto{padding:30px;height: 100vh;background-color: #fff;display: flex;flex-direction: row;flex-wrap: nowrap;align-items: center;justify-content: center;background: #888;}
+section.produto article{transition: all 400ms ease-in-out;width: 30%;background-color: #606060;border-radius: 10px; padding: 20px;height: 200px;margin: 15px;}
+section.produto article:hover {height: 250px;transform: scale(1.4);box-shadow: 1px 0px 5px black;}
+section.produto article h1{font-size: 12pt;color: #fff;font-family: 'fonte-titulo';}
+
+/*Formatando o article#novo*/
+article#novo input{padding: 4px;border-radius: 10px;width: 100%;margin-top: 10px;font-size: 8pt;text-align: center;font-weight: bolder;border: 1px solid #606060;color: #0ca3c9;}
+article#novo button{padding: 5px; border-radius: 10px;width: 50%;border:1px solid #606060;font-size: 10pt;text-align: center;margin-top: 10px;background-color: #0ca3c9;color: #000;}
+article#novo button:hover{transform: scale(1.1);color: #fff;}
+
+/*Formatando o article#guardado*/
+article#guardado {overflow:auto; padding: 0;}
+article#guardado li{margin: 2px;margin-right:5%;list-style: none; width: 40%;background-color: #dedede;padding: 15px;border-radius: 10px;color: #606060;float: right;text-align: center;}
+div.contexto {clip-path: circle(10% at 90% 12%);background-color: #0ca3c9; border-radius: 10px;height: 10vh;margin: -5px;padding-right: 1em;transition: all .5s ease-in-out;}
+div.contexto:hover {cursor: pointer;clip-path: circle(100%);}
+div.contexto span{float: right;color: #fff;font-weight: bolder;transition: opacity .4s;}
+div.contexto:hover span{opacity: 0;}
+option.excluir{font-size: min(8pt, 4vw); margin: 5px;}
+option.excluir:hover{color:#fff;}
+
+/*Formatação da página informações ==> section.informacao*/
+section.informacao {height: 100vh;width: 100%;background-color: #fff;display: flex;flex-direction: column;align-items: center;justify-content: center;}
+section.informacao fieldset{width: 80%;background-color: #dedede;padding: 10px;}
+section.informacao legend{text-align: left;font-family: 'fonte-titulo';color: #0ca3c9;font-size: max(12pt,2vw);}
+section.informacao input{padding: 10px;height: 10vh;font-size: max(10pt,1vw);}
